@@ -15,13 +15,13 @@ defineProps({
 
 <template>
   <div
-    class="mx-auto py-4 text-left border-2 rounded pl-2 my-4 hover:cursor-pointer truncate"
+    class="mx-auto py-2 text-left border-2 rounded pl-2 my-4 hover:cursor-pointer truncate"
     @click="$router.push({ name: 'NoteEdit', params: { id: note.id } })"
   >
     <p class="font-bold">{{ note.title }}</p>
     <template v-if="showExtraContent">
       <div class="flex gap-2">
-        <p>{{ note.creationDate.toDateString() }}</p>
+        <p>{{ note.editionDate.toDateString() }}</p>
         <p>{{ note.content }}</p>
       </div>
     </template>

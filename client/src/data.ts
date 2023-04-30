@@ -7,24 +7,28 @@ export const notes: Note[] = [
     title: 'My Cool Note',
     content: 'Hello World',
     creationDate: new Date(2023, 3, 23),
+    editionDate: new Date(2023, 3, 23),
   },
   {
     id: 2,
     title: 'My Cool Note',
     content: 'Hello World From Me',
     creationDate: new Date(2023, 3, 24),
+    editionDate: new Date(2023, 3, 24),
   },
   {
     id: 3,
     title: 'My Cool Note',
     content: 'Hello World From Me',
     creationDate: new Date(2023, 3, 25),
+    editionDate: new Date(2023, 3, 25),
   },
   {
     id: 4,
     title: 'My Cool Note',
     content: 'Hello World From Me',
     creationDate: new Date(2023, 3, 26),
+    editionDate: new Date(2023, 3, 26),
   },
 ];
 
