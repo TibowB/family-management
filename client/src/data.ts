@@ -1,5 +1,6 @@
 import { Link } from './models/Link';
 import { Note } from './models/Note';
+import { WeekDayMeal } from './models/WeekDayMeal';
 
 export const notes: Note[] = [
   {
@@ -46,7 +47,66 @@ export const links: Link[] = [
     route: '/meals',
   },
   {
-    name: 'Goals',
-    route: '/goals',
+    name: 'Todos',
+    route: '/todos',
+  },
+];
+
+export const weekDayMeals: WeekDayMeal[] = [
+  {
+    day: {
+      name: 'Monday',
+      position: 1,
+    },
+    lunch: '',
+    dinner: '',
+  },
+  {
+    day: {
+      name: 'Tuesday',
+      position: 2,
+    },
+    lunch: '',
+    dinner: '',
+  },
+  {
+    day: {
+      name: 'Wednesday',
+      position: 3,
+    },
+    lunch: '',
+    dinner: '',
+  },
+  {
+    day: {
+      name: 'Thursday',
+      position: 4,
+    },
+    lunch: '',
+    dinner: '',
+  },
+  {
+    day: {
+      name: 'Friday',
+      position: 5,
+    },
+    lunch: '',
+    dinner: '',
+  },
+  {
+    day: {
+      name: 'Saturday',
+      position: 6,
+    },
+    lunch: '',
+    dinner: '',
+  },
+  {
+    day: {
+      name: 'Sunday',
+      position: 0,
+    },
+    lunch: '',
+    dinner: '',
   },
 ];

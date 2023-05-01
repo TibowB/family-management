@@ -56,25 +56,27 @@ onBeforeRouteLeave((to, from, next) => {
 </script>
 
 <template>
-  <div class="font-bold my-4">
-    <RouterLink to="/notes">&lt; Notes</RouterLink>
-  </div>
+  <div class="flex flex-col h-full">
+    <div class="font-bold my-4">
+      <RouterLink to="/notes">&lt; Notes</RouterLink>
+    </div>
 
-  <template v-if="note" class="flex flex-col">
-    <input
-      type="text"
-      v-model="note.title"
-      class="w-full font-bold mb-4 focus:outline-0"
-      ref="titleRef"
-      @keyup.enter="handleContentFocus"
-      @change="handleOnChange"
-    />
-    <textarea
-      type="text"
-      v-model="note.content"
-      class="w-full focus:outline-0"
-      @change="handleOnChange"
-      ref="contentRef"
-    ></textarea>
-  </template>
+    <template v-if="note" class="flex flex-col">
+      <input
+        type="text"
+        v-model="note.title"
+        class="w-full font-bold mb-4 focus:outline-0 text-xl"
+        ref="titleRef"
+        @keyup.enter="handleContentFocus"
+        @change="handleOnChange"
+      />
+      <textarea
+        type="text"
+        v-model="note.content"
+        class="w-full flex-grow focus:outline-0 overflow-auto"
+        @change="handleOnChange"
+        ref="contentRef"
+      ></textarea>
+    </template>
+  </div>
 </template>
